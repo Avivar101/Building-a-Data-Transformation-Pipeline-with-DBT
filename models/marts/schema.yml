@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: fct_taxi_trips
+    description: >
+      Incremental trip-level fact table built from int_taxi_trips.
+      One row per trip. Optimized for BI consumption.
+
+    columns:
+      - name: trip_sk
+        tests:
+          - not_null
+          - unique
+      - name: trip_date
+        tests:
+          - not_null
+      - name: service_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['green', 'yellow']
+      - name: trip_duration_seconds
+        tests:
+          - not_null
+      - name: pickup_location_id
+        tests:
+          - relationships:
+              to: ref('dim_location_current')
+              field: location_id
+      - name: dropoff_location_id
+        tests:
+          - relationships:
+              to: ref('dim_location_current')
+              field: location_id
+  - name: dim_location
+    description: "Taxi zone lookup dimension built from the taxi_zone_geom seed."
+    columns:
+      - name: zone_id
+        tests:
+          - not_null
+          - unique
+      - name: zone
+        tests:
+          - not_null:
+              severity: warn
+      - name: borough
+        tests:
+          - not_null:
+              severity: warn
+  - name: dim_location_current
+    description: >
+      "Taxi current zone lookup dimension built from the taxi_zone_geom seed.
+      This model includes patched 'Unknown' rows for location_ids missing from the taxi zone seed to maintain referential integrity."
+    columns:
+      - name: location_id
+        tests:
+          - not_null
+          - unique
+      - name: zone
+        tests:
+          - not_null:
+              severity: warn
+      - name: borough
+        tests:
+          - not_null:
+              severity: warn

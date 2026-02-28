@@ -1,0 +1,99 @@
+version: 2
+
+models:
+  - name: int_taxi_trips
+    description: >
+      Canonical, cross-service representation of NYC taxi trips.
+      One row represents one completed taxi trip, unified across green and yellow services.
+      This model introduces a stable surrogate key and intrinsic trip-level attributes,
+      and serves as the upstream dependency for facts, dimensions and snapshots.
+    columns:
+      - name: trip_sk
+        description: >
+          Deterministic surrogate key for  tai trip, generated from service type,
+          timestamps, vendor, and locations.
+        tests:
+          - not_null
+          - unique
+
+      - name: service_type
+        description: >
+          Taxi service category indicating the source system.
+          Expected values are 'green' and 'yellow'.
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['green', 'yellow']
+
+      - name: vendor_id
+        description: >
+          Identifier for the taxi vendor or provider.
+        tests:
+          - not_null:
+              config:
+                severity: warn
+
+      - name: pickup_datetime
+        description: >
+          Timestamp when the taxi trip started.
+        tests:
+          - not_null
+
+      - name: dropoff_datetime
+        description: >
+          Timestamp when the taxi trip ended.
+        tests:
+          - not_null
+
+      - name: pickup_location_id
+        description: >
+          TLC taxi zone identifier for the pickup location.
+        tests:
+          - not_null
+
+      - name: dropoff_location_id
+        description: >
+          TLC taxi zone identifier for the dropoff location.
+        tests:
+          - not_null
+
+      - name: passenger_count
+        description: >
+          Number of passengers in the trip. May be zero for certain
+          operational or data-quality reasons.
+
+      - name: trip_distance
+        description: >
+          Distance traveled during the trip, in miles.
+
+      - name: fare_amount
+        description: >
+          Base fare charged for the trip, excluding extras.
+
+      - name: total_amount
+        description: >
+          Total amount charged to the customer, including taxes
+          and surcharges.
+
+      - name: payment_type
+        description: >
+          Code representing the payment method used for the trip.
+
+      - name: trip_type
+        description: >
+          Green-taxi–specific trip classification. Nullable for
+          yellow taxi trips.
+
+      - name: trip_date
+        description: >
+          Calendar date of the trip, derived from pickup_datetime.
+        tests:
+          - not_null
+
+      - name: created_at
+        description: >
+          Timestamp when the record was created in the analytics
+          layer.
+        tests:
+          - not_null

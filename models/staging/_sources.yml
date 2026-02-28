@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: taxi_trips
+    schema: raw
+    tables:
+      - name: green_trips_2021
+        description: "Green taxi trip data for the year 2021."
+      - name: yellow_trips_2021
+        description: "Yellow taxi trip data for the year 2021."
+      - name: green_trips_2022
+        description: "Green taxi trip data for the year 2022."
+      - name: yellow_trips_2022
+        description: "Yellow taxi trip data for the year 2022."

@@ -1,0 +1,5 @@
+version: 2
+
+data_tests:
+  - name: test_pickup_before_dropoff
+    description: "Check if pickup_datetime is earlier than dropoff_datetime"

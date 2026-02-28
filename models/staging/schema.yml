@@ -1,0 +1,58 @@
+version: 2
+
+models:
+  - name: stg_yellow_trips
+    description: "Staging model for yellow taxi trip data, combining data from 2021 and 2022."
+    columns:
+      - name: vendor_id
+        description: "A code indicating the provider associated with the trip record."
+      - name: pickup_datetime
+        description: "The date and time when the trip started."
+      - name: dropoff_datetime
+        description: "The date and time when the trip ended."
+      - name: passenger_count
+        description: "The number of passengers in the trip."
+      - name: trip_distance
+        description: "The distance of the trip in miles."
+      - name: pickup_location_id
+        description: "The location ID where the trip started."
+      - name: dropoff_location_id
+        description: "The location ID where the trip ended."
+      - name: data_file_year
+        description: "The year of the data file from which the record was sourced."
+      - name: data_file_month
+        description: "The month of the data file from which the record was sourced."
+      - name: service_type
+        description: "The type of taxi service (e.g., 'yellow')."
+  - name: stg_green_trips
+    description: "Staging model for green taxi trip data, combining data from 2021 and 2022."
+    columns:
+      - name: vendor_id
+        description: "A code indicating the provider associated with the trip record."
+      - name: pickup_datetime
+        description: "The date and time when the trip started."
+      - name: dropoff_datetime
+        description: "The date and time when the trip ended."
+      - name: passenger_count
+        description: "The number of passengers in the trip."
+      - name: trip_distance
+        description: "The distance of the trip in miles."
+      - name: pickup_location_id
+        description: "The location ID where the trip started."
+      - name: dropoff_location_id
+        description: "The location ID where the trip ended."
+      - name: data_file_year
+        description: "The year of the data file from which the record was sourced."
+      - name: data_file_month
+        description: "The month of the data file from which the record was sourced."
+      - name: service_type
+        description: "The type of taxi service (e.g., 'green')."
+  - name: stg_taxi_zone_geom
+    description: lookup staging table for dim_location
+    columns:
+      - name: zone_id
+        description: "Unique identifier for zones"
+      - name: zone
+        description: "name of zone"
+      - name: borough
+        description: "zone"
