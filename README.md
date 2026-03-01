@@ -79,7 +79,7 @@ You can connect with me and contact me for collaboration and gigs via:
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@okezieben722)
 
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](+234-911-812-2768)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/2349118122768)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/okeziebenj/)
 
@@ -92,4 +92,4 @@ Join my coaching program for dbt and analytics engineering where you learn:
 - and SQL
 
 Contact me on\
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](+234-911-812-2768)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/2349118122768?text=Hi%2C%20I%27m%20my%20name%20is%20____%20I%20am%20interested%20in%20joining%20your%20coaching%20program)
