@@ -5,7 +5,7 @@
 This project demonstrates the end-to-end design of a production-grade Analytics Engineering pipeline using dbt and DuckDB, from raw ingestion to BI-ready data models.
 <div align="center">
   <img src="assets/data pipeline.jpg" width="700" alt="Data Pipeline">
-  <p><em>Figure 1: Data Pipeline Architecture</em></p>
+  <p><em>Figure 1: The Data Pipeline Architecture</em></p>
 </div>
 
 ## 🛠️What I Implemented
