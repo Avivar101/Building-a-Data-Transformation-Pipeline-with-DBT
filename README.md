@@ -1,6 +1,6 @@
 # Data Tranformation with DBT
 
-## Project Overview
+## 💻Project Overview
 
 This project demonstrates the end-to-end design of a production-grade Analytics Engineering pipeline using dbt and DuckDB, from raw ingestion to BI-ready data models.
 <div align="center">
@@ -8,16 +8,18 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
   <p><em>Figure 1: Data Pipeline Architecture</em></p>
 </div>
 
-## What I Implemented
+## 🛠️What I Implemented
 
 1.  **Structured Transformation Pipeline**
     *   Designed a layered architecture (**Staging** -> **Intermediate** -> **marts**) following modern Analytics Engineering best practices.
     *   **Standardized** and **cleaned** raw datasets into canonical, contract-driven models.
     *   Clearly defined **model grain** and responsibility at each layer
+
     <div align="center">
       <img src="assets/lineage.png" width="700" alt="Data Pipeline">
       <p><em>Figure 2: Pipeline Lineage</em></p>
     </div>
+
 2.  **Cost-Efficient Incremental Processing**
     *   Implemented an **incemental fact model** using **dbt's** `incremental` **materialization**.
     *   Reduced unnecessary recomputation by loading only new data based on time-based logic
@@ -34,20 +36,23 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
     *   Built **fact and dimension tables** aligned to a **star schema**
     *   Introduced **deterministic surrogate keys** for stable joins
     *   Created **BI-ready serving models** optimized for dashboard querying
+
     <div align="center">
       <img src="assets/metabase.png" width="700" alt="Data Pipeline">
       <p><em>Figure 3: BI Consuming data models</em></p>
     </div>
+
 6.  **Comprehensive Documentation and Lineage**
     *   Documented models, columns and tests within dbt.
     *   Establihed clear model ownership and data contracts.
     *   Generated lineage graph
+
     <div align="center">
       <img src="assets/docs.png" width="700" alt="Data Pipeline">
       <p><em>Figure 4: dbt Project Documentation</em></p>
     </div>
 
-## Key Lessons
+## 🎯Key Lessons
 - Data Modeling Design and Decisions
     - Kimball design, star/snowflake modeling
 - dbt snapshot, macros, tests, incremental model
@@ -62,3 +67,29 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
     - modularity
 
 The purpose of this project was to learn and demonstrate how to build a **robust** and **cost efficient data transformation pipeline** using dbt, building a pipeline architecture based on **industry standard** methods, applying tests, incremental models, slowly changing dimensions and creating a comprehensive documentation.
+
+
+# 🌟About me
+
+👋 I'm Ben. An Analytics Engineer, focused on building lean, cost-effective analytics data pipelines and systems using modern data tools, a dbt specialist who builds small-scale but robust data transformation and modeling pipelines.
+
+## 📞Contact
+
+You can connect with me and contact me for collaboration and gigs via:
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@okezieben722)
+
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](+234-911-812-2768)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/okeziebenj/)
+
+# 👨‍💻Coaching
+
+Join my coaching program for dbt and analytics engineering where you learn:
+- Data pipeline development with dbt
+- Data Transformation and Modeling with dbt
+- Analytics Engineering
+- and SQL
+
+Contact me on\
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](+234-911-812-2768)
