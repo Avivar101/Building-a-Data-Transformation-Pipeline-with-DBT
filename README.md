@@ -71,7 +71,7 @@ The purpose of this project was to learn and demonstrate how to build a **robust
 
 # 🌟About me
 
-👋 I'm Ben. An Analytics Engineer, focused on building lean, cost-effective analytics data pipelines and systems using modern data tools, a dbt specialist who builds small-scale but robust data transformation and modeling pipelines.
+👋 I'm Ben. An Analytics Engineer, focused on building **lean**, **cost-effective** analytics data pipelines and systems using **modern data tools**, a dbt specialist who builds **small-scale** but **robust data transformation** and **modeling pipelines**.
 
 ## 📞Contact
 
