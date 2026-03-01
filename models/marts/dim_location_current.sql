@@ -30,4 +30,4 @@ union all
 select
   265 as location_id,
   'Unknown' as zone,
-  'Unknown' as borough,
+  'Unknown' as borough

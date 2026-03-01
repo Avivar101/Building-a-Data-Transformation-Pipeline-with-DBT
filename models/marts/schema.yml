@@ -26,13 +26,15 @@ models:
       - name: pickup_location_id
         tests:
           - relationships:
-              to: ref('dim_location_current')
-              field: location_id
+              arguments:
+                to: ref('dim_location_current')
+                field: location_id
       - name: dropoff_location_id
         tests:
           - relationships:
-              to: ref('dim_location_current')
-              field: location_id
+              arguments:
+                to: ref('dim_location_current')
+                field: location_id
   - name: dim_location
     description: "Taxi zone lookup dimension built from the taxi_zone_geom seed."
     columns:
@@ -43,11 +45,13 @@ models:
       - name: zone
         tests:
           - not_null:
-              severity: warn
+              config:
+                severity: warn
       - name: borough
         tests:
           - not_null:
-              severity: warn
+              config:
+                severity: warn
   - name: dim_location_current
     description: >
       "Taxi current zone lookup dimension built from the taxi_zone_geom seed.
@@ -60,8 +64,10 @@ models:
       - name: zone
         tests:
           - not_null:
-              severity: warn
+              config:
+                severity: warn
       - name: borough
         tests:
           - not_null:
-              severity: warn
+              config:
+                severity: warn
