@@ -28,7 +28,7 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
     *   Implemented **Slowly Changing Dimensions** using **dbt snapshots**
     *   Preserved historical attribute changes with valid-from / valid-to logic
     *   Exposed a current-state dimension view for clean analytics joins
-4.  **Data Quality Enforecement**
+4.  **Data Quality Enforcement**
     *   Applied generic and **custom dbt tests** (uniquesness, non-null, relationships, temporal integrity).
     *   Enforced logical constraints (e.g. pickup \< dropoff)
     *   Maintained model contraints through **automated validation**
