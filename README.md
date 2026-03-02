@@ -1,4 +1,4 @@
-# Data Tranformation with DBT
+# Data Tranformation pipeline with DBT
 
 ## 💻Project Overview
 
