@@ -62,9 +62,13 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
 - Data Artifacts
     - Physical sources, logical sources, Analytical entities
 - Modeling pipeline with dbt
+<<<<<<< Updated upstream
     - project structure
+=======
+    - project structure definition
+>>>>>>> Stashed changes
     - SQL
-    - modularity
+    - modularity with dbt
 
 The purpose of this project was to learn and demonstrate how to build a **robust** and **cost efficient data transformation pipeline** using dbt, building a pipeline architecture based on **industry standard** methods, applying tests, incremental models, slowly changing dimensions and creating a comprehensive documentation.
 
