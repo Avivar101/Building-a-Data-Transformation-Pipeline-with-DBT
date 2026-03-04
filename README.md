@@ -21,7 +21,7 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
     </div>
 
 2.  **Cost-Efficient Incremental Processing**
-    *   Implemented an **incemental fact model** using **dbt's** `incremental` **materialization**.
+    *   Implemented an **incremental fact model** using **dbt's** `incremental` **materialization**.
     *   Reduced unnecessary recomputation by loading only new data based on time-based logic
     *   Ensured idempotency through deterministic surrogate keys
 3.  **Historical Tracking with SCD Type 2**
