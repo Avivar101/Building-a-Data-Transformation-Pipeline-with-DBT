@@ -1,4 +1,4 @@
-# Data Tranformation pipeline with DBT
+# Data Transformation pipeline with DBT
 
 ## 💻Project Overview
 
@@ -29,7 +29,7 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
     *   Preserved historical attribute changes with valid-from / valid-to logic
     *   Exposed a current-state dimension view for clean analytics joins
 4.  **Data Quality Enforcement**
-    *   Applied generic and **custom dbt tests** (uniquesness, non-null, relationships, temporal integrity).
+    *   Applied generic and **custom dbt tests** (uniqueness, non-null, relationships, temporal integrity).
     *   Enforced logical constraints (e.g. pickup \< dropoff)
     *   Maintained model contraints through **automated validation**
 5.  **Canonical Data Modeling for BI Consumption**
@@ -44,7 +44,7 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
 
 6.  **Comprehensive Documentation and Lineage**
     *   Documented models, columns and tests within dbt.
-    *   Establihed clear model ownership and data contracts.
+    *   Established clear model ownership and data contracts.
     *   Generated lineage graph
 
     <div align="center">
@@ -62,7 +62,7 @@ This project demonstrates the end-to-end design of a production-grade Analytics 
 - Data Artifacts
     - Physical sources, logical sources, Analytical entities
 - Modeling pipeline with dbt
-    - project tructure
+    - project structure
     - SQL
     - modularity
 
