@@ -14,6 +14,6 @@ select
     zone_id,
     zone,
     borough
-from {{ ref('dim_location') }}
+from {{ ref('stg_taxi_zone_geom') }}
 
 {% endsnapshot %}

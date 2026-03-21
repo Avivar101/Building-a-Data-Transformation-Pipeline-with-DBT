@@ -22,9 +22,7 @@ with src as (
     from {{ ref('int_taxi_trips') }}
 
     {% if is_incremental() %}
-      where trip_date > (select coalesce(max(trip_date), date('1900-01-01')) from {{ this }})
-    {% else %}
-      optional_cond
+      where trip_date > (select coalesce(max(trip_date), date('1900-01-01')) from {{ this }} )
     {% endif %}
 ),
 
